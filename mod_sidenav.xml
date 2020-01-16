@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_custom</name>
+	<author>Billy Somers</author>
+	<creationDate>January 2020</creationDate>
+	<copyright>Copyright (C) 2005 - 2020 Billy Somers. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>bsomers@nso.gov.pg</authorEmail>
+	<authorUrl>www.nso.gov.pg</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_SIDENAV_XML_DESCRIPTION</description>
+
+    <files>
+        <filename module="mod_sidnav">mod_sidnav.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.mod_custom.ini</language>
+		<language tag="en-GB">en-GB.mod_custom.sys.ini</language>
+	</languages>
+
+    <config>
+		<fields name="params">
+			<fieldset name="options" label="COM_MODULES_BASIC_FIELDSET_LABEL">
+				<field
+					name="select_menu"
+					type="modal-menu"
+					label="MOD_SIDENAV_SELECT_NAV_LABEL"
+					description="MOD_SIDENAV_DESC"
+					>
+				</field>
+				<field
+					name=""
+                    
+			</fieldset>			
+		</fields>
+	</config>
+</extension>
